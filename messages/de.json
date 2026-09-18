@@ -8,7 +8,12 @@
     "aircraftAlt": "Konzeptvisualisierung eines Frachtflugzeugs mit FRAJET-CARGO-Lackierung auf einem Flughafenvorfeld im Morgenlicht",
     "capacity": "Bis zu {tonnes, number} Tonnen",
     "capacityFlight": "Boeing 757-200F · Bis zu {tonnes, number} Tonnen pro Flug",
-    "language": "Sprache"
+    "language": "Sprache",
+    "afghanistan": "AFGHANISTAN",
+    "frankfurt": "Frankfurt",
+    "KBL": "Kabul",
+    "HEA": "Herat",
+    "routeCities": "FRANKFURT ↔ KABUL / HERAT"
   },
   "Meta": {
     "title": "FRAJET Cargo | Europa ↔ Afghanistan",

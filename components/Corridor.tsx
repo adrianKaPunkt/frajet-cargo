@@ -27,7 +27,7 @@ export function Corridor() {
             <div className="gateway">
               <span className="eyebrow">{t("gateway")}</span>
               <strong>
-                FRA <span>Frankfurt</span>
+                <bdi>FRA</bdi> <span>{c("frankfurt")}</span>
               </strong>
               <p>{t("gatewayNote")}</p>
             </div>
@@ -57,7 +57,7 @@ export function Corridor() {
                   }}
                   tabIndex={selected === i ? 0 : -1}
                 >
-                  {d.name}
+                  {c(d.code)}
                   <span>{d.code}</span>
                 </button>
               ))}
@@ -81,7 +81,7 @@ export function Corridor() {
             <svg
               viewBox="0 0 1050 714"
               role="img"
-              aria-label={t("routeAlt", { destination: dest.name })}
+              aria-label={t("routeAlt", { destination: c(dest.code) })}
             >
               <defs>
                 <linearGradient id="route" x1="0" x2="1">
@@ -108,7 +108,7 @@ export function Corridor() {
                 FRA
               </text>
               <text x="230" y="205">
-                Frankfurt
+                {c("frankfurt")}
               </text>
               {destinations.map((d) => (
                 <g key={d.code} opacity={d.code === dest.code ? 1 : 0.5}>
@@ -121,7 +121,7 @@ export function Corridor() {
                     {d.code}
                   </text>
                   <text x={d.x + (d.code === "HEA" ? -45 : 15)} y={d.y + 57}>
-                    {d.name}
+                    {c(d.code)}
                   </text>
                 </g>
               ))}
@@ -129,7 +129,7 @@ export function Corridor() {
                 {c("europe")}
               </text>
               <text x="755" y="540" className="map-region">
-                AFGHANISTAN
+                {c("afghanistan")}
               </text>
             </svg>
             <div className="map-key">

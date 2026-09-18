@@ -8,7 +8,7 @@ export function LocalizedDocument({
   children: React.ReactNode;
 }) {
   return (
-    <html lang={locale} dir="ltr">
+    <html lang={locale} dir={locale === "fa-AF" ? "rtl" : "ltr"}>
       <body>
         <LocaleProvider locale={locale} messages={dictionaries[locale]}>
           {children}

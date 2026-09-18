@@ -27,7 +27,7 @@ export function Aircraft() {
             <h2>
               {t("title")}
               <br />
-              <span>757-200F.</span>
+              <span><bdi>757-200F.</bdi></span>
             </h2>
             <p>{t("intro")}</p>
             <div className="payload">

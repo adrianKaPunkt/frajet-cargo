@@ -8,7 +8,7 @@ export function localizedMetadata(locale: Locale): Metadata {
     metadataBase: new URL("https://frajet-cargo.adriankdev.chatgpt.site"),
     alternates: {
       canonical: localePath(locale),
-      languages: { en: "/", de: "/de/", "x-default": "/" },
+      languages: { en: "/", de: "/de/", "fa-AF": "/fa-AF/", "x-default": "/" },
     },
     robots: { index: false, follow: false },
     icons: { icon: "/icon.svg" },

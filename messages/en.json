@@ -8,7 +8,12 @@
     "aircraftAlt": "Concept visualisation of a freighter with FRAJET CARGO branding on an airport apron at dawn",
     "capacity": "Up to {tonnes, number} tonnes",
     "capacityFlight": "Boeing 757-200F · Up to {tonnes, number} tonnes per flight",
-    "language": "Language"
+    "language": "Language",
+    "afghanistan": "AFGHANISTAN",
+    "frankfurt": "Frankfurt",
+    "KBL": "Kabul",
+    "HEA": "Herat",
+    "routeCities": "FRANKFURT ↔ KABUL / HERAT"
   },
   "Meta": {
     "title": "FRAJET Cargo | Europe ↔ Afghanistan",

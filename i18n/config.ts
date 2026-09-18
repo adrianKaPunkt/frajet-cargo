@@ -1,14 +1,17 @@
 import en from "@/messages/en.json";
 import de from "@/messages/de.json";
 
-export const locales = ["en", "de"] as const;
+import faAF from "@/messages/fa-AF.json";
+
+export const locales = ["en", "de", "fa-AF"] as const;
 export type Locale = (typeof locales)[number];
 export const defaultLocale: Locale = "en";
 export const localeNames: Record<Locale, string> = {
   en: "English",
   de: "Deutsch",
+  "fa-AF": "دری",
 };
-export const dictionaries = { en, de } satisfies Record<Locale, typeof en>;
+export const dictionaries = { en, de, "fa-AF": faAF } satisfies Record<Locale, typeof en>;
 export function isLocale(value: string): value is Locale {
   return locales.some((locale) => locale === value);
 }

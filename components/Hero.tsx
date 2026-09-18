@@ -37,8 +37,8 @@ export function Hero() {
         <div className="hero-route">
           <span>{c("europe")}</span>
           <MoveRight />
-          <strong>AFGHANISTAN</strong>
-          <small>FRANKFURT ↔ KABUL / HERAT</small>
+          <strong>{c("afghanistan")}</strong>
+          <small>{c("routeCities")}</small>
         </div>
         <a className="explore" href="#corridor">
           <ArrowDown size={16} />
@@ -51,11 +51,12 @@ export function Hero() {
 }
 export function Facts() {
   const t = useTranslations("Facts");
+  const c = useTranslations("Common");
   return (
     <div className="facts shell">
       <div>
         <span>{t("aircraft")}</span>
-        <strong>{site.aircraft}</strong>
+        <strong><bdi>{site.aircraft}</bdi></strong>
         <small>{t("aircraftNote")}</small>
       </div>
       <div>
@@ -67,7 +68,7 @@ export function Facts() {
       </div>
       <div>
         <span>{t("gateway")}</span>
-        <strong>Frankfurt</strong>
+        <strong>{c("frankfurt")}</strong>
         <small>{t("gatewayNote")}</small>
       </div>
       <div>

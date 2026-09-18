@@ -51,6 +51,7 @@ export function Header() {
                 href={localePath(lang)}
                 hrefLang={lang}
                 lang={lang}
+                dir={lang === "fa-AF" ? "rtl" : "ltr"}
                 aria-label={localeNames[lang]}
                 aria-current={locale === lang ? "page" : undefined}
                 onClick={(e) => {
@@ -63,7 +64,7 @@ export function Header() {
                     localePath(lang) + window.location.hash;
                 }}
               >
-                {lang.toUpperCase()}
+                {lang === "fa-AF" ? localeNames[lang] : lang.toUpperCase()}
               </a>
             ))}
           </nav>
