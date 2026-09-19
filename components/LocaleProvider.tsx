@@ -1,7 +1,7 @@
 "use client";
 import { NextIntlClientProvider } from "next-intl";
 import type { Locale } from "@/i18n/config";
-import type en from "@/messages/en.json";
+import type en from "@/i18n/dictionaries/en.json";
 export function LocaleProvider({
   locale,
   messages,

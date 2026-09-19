@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
-import { LocalizedDocument } from "@/components/LocalizedDocument";
-import { isLocale, locales } from "@/i18n/config";
+import { LocaleProvider } from "@/components/LocaleProvider";
+import { dictionaries, isLocale, locales } from "@/i18n/config";
 import { localizedMetadata } from "@/i18n/metadata";
 import "../globals.css";
 type Props = { params: Promise<{ locale: string }>; children: React.ReactNode };
@@ -16,5 +16,13 @@ export async function generateMetadata({ params }: Props) {
 export default async function Layout({ params, children }: Props) {
   const { locale } = await params;
   if (!isLocale(locale)) notFound();
-  return <LocalizedDocument locale={locale}>{children}</LocalizedDocument>;
+  return (
+    <html lang={locale} dir={locale === "fa-AF" ? "rtl" : "ltr"}>
+      <body>
+        <LocaleProvider locale={locale} messages={dictionaries[locale]}>
+          {children}
+        </LocaleProvider>
+      </body>
+    </html>
+  );
 }

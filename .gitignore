@@ -4,3 +4,7 @@ out/
 .env*
 .sites-runtime/
 *.tsbuildinfo
+.agents/
+.codex/
+.openai/
+

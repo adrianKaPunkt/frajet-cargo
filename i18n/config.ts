@@ -1,7 +1,7 @@
-import en from "@/messages/en.json";
-import de from "@/messages/de.json";
+import en from "@/i18n/dictionaries/en.json";
+import de from "@/i18n/dictionaries/de.json";
 
-import faAF from "@/messages/fa-AF.json";
+import faAF from "@/i18n/dictionaries/fa-AF.json";
 
 export const locales = ["en", "de", "fa-AF"] as const;
 export type Locale = (typeof locales)[number];

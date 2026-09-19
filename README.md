@@ -16,7 +16,7 @@ Production validation: `npm run build`. The project exports a static site to `ou
 - `components/LandingPage.tsx`: page composition
 - `app/(default)/`: original English route
 - `app/[locale]/`: statically generated locale routes and metadata
-- `messages/en.json`, `messages/de.json`: complete translation dictionaries
+- `i18n/dictionaries/en.json`, `i18n/dictionaries/de.json`: complete translation dictionaries
 - `i18n/`: locale registry, metadata and typed next-intl configuration
 - `app/globals.css`: brand tokens, component styles and responsive layouts
 - `components/`: Header, Hero, Facts, Corridor, Aircraft, EnquiryForm and Footer
@@ -49,7 +49,7 @@ Production build includes TypeScript validation. Browser QA covers desktop/mobil
 
 ## Extending i18n
 
-Add a dictionary matching `messages/en.json`, register its locale, display name and dictionary in `i18n/config.ts`, and add its language alternate in `i18n/metadata.ts`. Types enforce matching message keys. All visitor copy, accessible labels, page metadata, request summaries and route labels are localized. Dates and numbers use next-intl locale formatting. New locales are statically generated at build time; no middleware or server is required. The locale in the URL survives reloads and is shareable.
+Add a dictionary matching `i18n/dictionaries/en.json`, register its locale, display name and dictionary in `i18n/config.ts`, and add its language alternate in `i18n/metadata.ts`. Types enforce matching message keys. All visitor copy, accessible labels, page metadata, request summaries and route labels are localized. Dates and numbers use next-intl locale formatting. New locales are statically generated at build time; no middleware or server is required. The locale in the URL survives reloads and is shareable.
 
 The current EN/DE languages use left-to-right layout. For a future Dari/Pashto version, also add RTL direction and visually verify the design with native translations.
 

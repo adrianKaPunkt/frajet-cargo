@@ -7,12 +7,20 @@ export function Hero() {
   const c = useTranslations("Common");
   return (
     <section className="hero" aria-labelledby="hero-heading">
-      <img
-        className="hero-image"
-        src="/aircraft-branded.png"
-        alt={c("aircraftAlt")}
-        fetchPriority="high"
-      />
+      <picture>
+        <source media="(min-width: 1600px)" srcSet="/aircraft-branded.png" />
+        <source media="(max-width: 600px)" srcSet="/hero-mobile.webp" />
+        <source
+          media="(max-width: 1200px) and (orientation: portrait)"
+          srcSet="/hero-tablet.webp"
+        />
+        <img
+          className="hero-image"
+          src="/hero-desktop.webp"
+          alt={c("aircraftAlt")}
+          fetchPriority="high"
+        />
+      </picture>
       <div className="hero-shade" />
       <div className="shell hero-content">
         <p className="eyebrow">
