@@ -136,5 +136,43 @@
     "tagline": "GEZIELT VERBUNDEN.",
     "top": "Nach oben ↑",
     "conceptNote": "Die Flugzeugabbildung ist ein KI-generiertes Konzept, kein Foto der Flotte."
+  },
+  "Legal": {
+    "label": "Rechtliches",
+    "close": "Schließen",
+    "draftTitle": "Entwurf · noch nicht final",
+    "draftNotice": "Diese Inhalte sind Platzhalter für die Gestaltung. Die vollständigen Angaben und freigegebenen Rechtstexte werden vor der Veröffentlichung ergänzt.",
+    "imprint": {
+      "title": "Impressum",
+      "intro": "Angaben zu FRAJET Cargo und zur Kontaktaufnahme.",
+      "first": {
+        "title": "Unternehmen",
+        "body": "FRAJET Cargo\nVollständiger Firmenname, Rechtsform und vertretungsberechtigte Person: noch zu ergänzen."
+      },
+      "second": {
+        "title": "Anschrift",
+        "body": "CargoCity Süd\nGebäude 581\n60549 Frankfurt am Main\nDeutschland"
+      },
+      "third": {
+        "title": "Kontakt & Registerangaben",
+        "body": "E-Mail, Telefonnummer sowie die zutreffenden Register- und Steuerangaben werden nach Bestätigung ergänzt."
+      }
+    },
+    "privacy": {
+      "title": "Datenschutz",
+      "intro": "Hier entsteht die Datenschutzerklärung für die FRAJET-Cargo-Website.",
+      "first": {
+        "title": "Verantwortlicher & Kontakt",
+        "body": "Die vollständigen Angaben zum Verantwortlichen und der Kontakt für Datenschutzanliegen werden ergänzt."
+      },
+      "second": {
+        "title": "Ihre Frachtanfrage",
+        "body": "Das aktuelle Formular bereitet Ihre Anfrage im Browser vor. Die Vorschau und der Download senden keine Formulardaten an einen Server. Beim ausdrücklichen Sprachwechsel wird ein Entwurf vorübergehend im Sitzungsspeicher des Browsers übergeben und nach der Übernahme entfernt. Eine spätere Weitergabe der heruntergeladenen Datei erfolgt durch Sie selbst."
+      },
+      "third": {
+        "title": "Vollständige Datenschutzerklärung",
+        "body": "Die finale Fassung wird auf den tatsächlichen Betrieb abgestimmt. Angaben zu Hosting, technischen Zugriffsdaten, eingesetzten Diensten, Verarbeitungszwecken, Rechtsgrundlagen, Speicherdauer und Ihren Rechten sind noch zu ergänzen."
+      }
+    }
   }
 }

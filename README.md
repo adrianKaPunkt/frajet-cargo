@@ -13,15 +13,35 @@ Production validation: `npm run build`. The project exports a static site to `ou
 
 ## Structure
 
-- `components/LandingPage.tsx`: page composition
-- `app/(default)/`: original English route
+- `app/layout.tsx`: shared root layout for client-side language navigation
+- `components/LocaleDocument.tsx`: route-aware document language and text direction
+- `app/[locale]/page.tsx`: shared landing page composition
+- `app/[locale]/_sections/`: Hero, Facts, Corridor, Aircraft, Approach and EnquiryForm
+- `app/(default)/`: original English route, reusing the locale page composition
 - `app/[locale]/`: statically generated locale routes and metadata
 - `i18n/dictionaries/en.json`, `i18n/dictionaries/de.json`: complete translation dictionaries
 - `i18n/`: locale registry, metadata and typed next-intl configuration
-- `app/globals.css`: brand tokens, component styles and responsive layouts
-- `components/`: Header, Hero, Facts, Corridor, Aircraft, EnquiryForm and Footer
+- `app/globals.css`: Tailwind theme, local fonts, responsive variants and global accessibility defaults
+- `components/`: shared Header, Footer and LocaleProvider
 - `lib/site.ts`: contact configuration and destination data
 - `public/`: locally hosted brand assets, fonts and imagery
+
+## Tailwind CSS
+
+Tailwind CSS v4 runs through `@tailwindcss/postcss` in `postcss.config.mjs`.
+All page sections and shared components use static Tailwind utilities in their TSX files,
+including responsive layouts, interaction states and RTL adjustments. `app/globals.css`
+contains only the theme, local fonts, base styles, animation and shared variants.
+
+Brand utilities include `bg-navy`, `bg-surface`, `bg-blue`, `text-bright`, `text-muted`
+and `border-line`. `font-sans` and `font-mono` adapt to the current writing direction.
+The existing inclusive breakpoints are preserved as `tablet:` (≤1100px), `mobile:`
+(≤800px), `small:` (≤420px) and `tiny:` (≤360px). `nav-tablet:`, `nav-wrap:`,
+`hero-wide:` and `legal-mobile:` cover the existing specific layouts; `de:` and `rtl:`
+handle language-specific adjustments. Standard Tailwind variants also work.
+
+Preflight remains omitted to preserve the existing browser defaults. Base border widths
+are zeroed so directional border utilities can be used without adding borders on other sides.
 
 ## Brand reference
 
@@ -35,6 +55,7 @@ For a later submission endpoint, remove static export if using Next.js route han
 
 ## Content and launch preparation
 
+- Footer legal notice and privacy dialogs are design drafts, clearly labelled in EN/DE/Dari. Replace the `Legal` content in each `i18n/dictionaries/*.json` with approved operator details and legal texts before publication; then remove the draft notice in `components/legal/LegalModal.tsx`. The shared dialog handles keyboard focus, Escape, backdrop dismissal and background scroll locking.
 - Boeing 757-200F only; up to 25 tonnes **marketable** capacity per flight.
 - Frankfurt-centred Europe–Kabul/Herat corridor, both directions.
 - No schedules, flight numbers, live capacity, booking or unverified regulatory/certification claims.

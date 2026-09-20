@@ -136,5 +136,43 @@
     "tagline": "CONNECTED WITH PURPOSE.",
     "top": "Back to top ↑",
     "conceptNote": "Aircraft imagery is an AI-generated concept, not a fleet photograph."
+  },
+  "Legal": {
+    "label": "Legal",
+    "close": "Close",
+    "draftTitle": "Draft · not final",
+    "draftNotice": "This content is a placeholder for the design. Complete company details and approved legal texts will be added before publication.",
+    "imprint": {
+      "title": "Legal notice",
+      "intro": "Company and contact information for FRAJET Cargo.",
+      "first": {
+        "title": "Company",
+        "body": "FRAJET Cargo\nFull company name, legal form and authorised representative: to be added."
+      },
+      "second": {
+        "title": "Address",
+        "body": "CargoCity Süd\nGebäude 581\n60549 Frankfurt am Main\nGermany"
+      },
+      "third": {
+        "title": "Contact & registration",
+        "body": "Email, telephone number and the applicable registration and tax details will be added once confirmed."
+      }
+    },
+    "privacy": {
+      "title": "Privacy",
+      "intro": "The privacy notice for the FRAJET Cargo website will be available here.",
+      "first": {
+        "title": "Controller & contact",
+        "body": "Full details of the data controller and the contact for privacy enquiries will be added."
+      },
+      "second": {
+        "title": "Your cargo enquiry",
+        "body": "The current form prepares your enquiry in your browser. Previewing and downloading do not send form data to a server. When you explicitly change language, a draft is temporarily transferred through browser session storage and removed after it is restored. You decide whether to share the downloaded file yourself."
+      },
+      "third": {
+        "title": "Complete privacy notice",
+        "body": "The final notice will reflect the actual website operation. Details about hosting, technical access data, services used, processing purposes, legal bases, retention periods and your rights are still to be added."
+      }
+    }
   }
 }
